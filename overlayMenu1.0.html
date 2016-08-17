@@ -20,24 +20,7 @@ body {
   z-index: -99999;
 }
 
-/*#burger {
-  font-size: 40px;
-  cursor: pointer;
-  float: right;
-  margin-right: 2%;
-  margin-top: 1%;
-  color: #fff;
-  opacity: 1;
-}
-
-#burger:hover {
-  color: gray;
-  transition: 0.3s;
-}
-*/
-
 #burger {
-/*.container {*/
   float: right;
   margin-right: 3%;
   margin-top: 2.3%;
@@ -52,48 +35,6 @@ body {
   margin: 6px 0;
   transition: 0.4s;
 }
-
-
-/*-----Lame attempts at CSS X-------
-
-#x {
-  float: right;
-  right: 10%;
-}
-
-.xBar1 {
-  width: 35px;
-  height: 2px;
-  background-color: #fff;
-  -webkit-transform: rotate(-45deg) translate(-6px, 3px) ;
-    transform: rotate(-45deg) translate(-1px, -1px) ;
-}
-
-.xBar2 {
-  width: 35px;
-  height: 2px;
-  background-color: #fff;
-    -webkit-transform: rotate(45deg) translate(-2px, -2px) ;
-    transform: rotate(45deg) translate(-2px, -1px) ;
-}
-
-
-Rotate first bar 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-Fade out the second bar 
-.change .bar2 {
-    opacity: 0;
-}
-
-Rotate last bar 
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}*/
 
 .sidenav {
   opacity: 0.8;
@@ -183,12 +124,6 @@ Rotate last bar
  
   <div id='mySidenav' class='sidenav'>
     <a href='javascript:void(0)' class='closebtn' onclick='closeNav()'><span class="chevron right"></span></a>
-    <!--<div id='x'>
-      <a href='javascript:voice(0)' class='closebtn' onclick='closeNav()'>
-        <div class="xBar1"></div>
-        <div class="xBar2"></div>
-      </a>
-    </div>-->
     <div class='contentContainer'>
       <ul>
         <li><a href='#' class='active'>HOME</a></li>
@@ -203,9 +138,6 @@ Rotate last bar
       </ul>
     </div>
   </div>
-
-  <!--<span id='burger' onclick='openNav()'>&#9776;</span>-->
-  <!--<div class="container" onclick="myFunction(this)">-->
   <div id='burger' onclick='openNav()'>
     <div class='bar1'></div>
     <div class='bar2'></div>
@@ -213,20 +145,18 @@ Rotate last bar
   </div>
   <div class='slideshow'></div>
 
-
-
   <script>
-  function openNav() {
+    function openNav() {
       document.getElementById('mySidenav').style.width = '290px';
       document.getElementById('burger').style.visibility = 'hidden';
-  }
+    }
 
-  function closeNav() {
+    function closeNav() {
       document.getElementById('mySidenav').style.width = '0';
 
-  setTimeout(function() {
+    setTimeout(function() {
       document.getElementById('burger').style.visibility = 'visible';},350);
-  }
+    }
   </script>
 
   <script type='text/javascript'>
@@ -234,13 +164,6 @@ Rotate last bar
         ['img/01.jpg']
       );
   </script>
-
-  <!--<script>
-    function myFunction(x) {
-    x.classList.toggle("change");
-}
-  </script>-->
-
      
 </body>
 </html>
